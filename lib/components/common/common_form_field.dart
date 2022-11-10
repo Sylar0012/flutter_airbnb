@@ -19,7 +19,7 @@ class CommformField extends StatelessWidget {
             border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
             focusedBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(10),
-              borderSide: BorderSide(color: Colors.black, width: 2),
+              borderSide: BorderSide(color: Colors.grey, width: 2),
             ),
           ),
         ),
