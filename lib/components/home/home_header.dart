@@ -16,11 +16,15 @@ class HomeHeader extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      child: Column(
-        children: [
-          HomeHeaderAppBar(),
-          HomeHeaderForm(),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.all(gap_m),
+        child: Column(
+          children: [
+            HomeHeaderAppBar(),
+            Spacer(),
+            HomeHeaderForm(),
+          ],
+        ),
       ),
     );
   }

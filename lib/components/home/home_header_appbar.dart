@@ -37,9 +37,9 @@ Widget _buildAppBarLogo() {
 Widget _buildAppBarMenu() {
   return Row(
     children: [
-      Text("회원가입", style: subtitl1(mColor: Colors.white)),
+      Text("회원가입", style: subtitle1(mColor: Colors.white)),
       SizedBox(width: gap_m),
-      Text("로그인", style: subtitl1(mColor: Colors.white)),
+      Text("로그인", style: subtitle1(mColor: Colors.white)),
     ],
   );
 }

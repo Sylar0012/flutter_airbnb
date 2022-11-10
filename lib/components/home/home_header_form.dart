@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_airbnb/components/common/common_form_field.dart';
+import 'package:flutter_airbnb/size.dart';
 
 class HomeHeaderForm extends StatelessWidget {
   const HomeHeaderForm({Key? key}) : super(key: key);
@@ -15,13 +17,16 @@ class HomeHeaderForm extends StatelessWidget {
           borderRadius: BorderRadius.circular(20),
         ),
         child: Form(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            children: [
-              _buildFormTitle(),
-              _buildFormField(),
-              _buildFormSubmit(),
-            ],
+          child: Padding(
+            padding: const EdgeInsets.all(gap_l),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.end,
+              children: [
+                _buildFormTitle(),
+                _buildFormField(),
+                _buildFormSubmit(),
+              ],
+            ),
           ),
         ),
       ),
@@ -33,7 +38,7 @@ class HomeHeaderForm extends StatelessWidget {
   }
 
   Widget _buildFormField() {
-    return SizedBox();
+    return CommformField();
   }
 
   Widget _buildFormSubmit() {
