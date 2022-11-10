@@ -5,20 +5,29 @@ class HomeBodyBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Stack(
-      // 나중에 패딩 주기
-      children: [
-        _bulidBannerImage(),
-        _bulidBannerCaption(),
-      ],
+    return Container(
+      height: 200,
+      child: Stack(
+        // 나중에 패딩 주기
+        children: [
+          _bulidBannerImage(),
+          _bulidBannerCaption(),
+        ],
+      ),
     );
   }
 
   Widget _bulidBannerImage() {
-    return SizedBox();
+    return Container(
+      height: 200,
+      color: Colors.blue,
+    );
   }
 
   Widget _bulidBannerCaption() {
-    return SizedBox();
+    return Container(
+      height: 100,
+      color: Colors.yellow,
+    );
   }
 }
