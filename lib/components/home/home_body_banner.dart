@@ -20,14 +20,14 @@ class HomeBodyBanner extends StatelessWidget {
   Widget _bulidBannerImage() {
     return Container(
       height: 200,
-      color: Colors.blue,
+      color: Colors.yellow,
     );
   }
 
   Widget _bulidBannerCaption() {
     return Container(
       height: 100,
-      color: Colors.yellow,
+      color: Colors.blue,
     );
   }
 }
